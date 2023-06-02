@@ -1,0 +1,93 @@
+$success: #5b7553;
+$info: #8E78A1;
+
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+$font-normal: "Alegreya Sans";
+$font-fancy: "Alegreya";
+
+.nav-link {
+    color: white;
+    font-family: $font-normal;
+}
+
+.carousel:hover .carousel-control-prev,
+.carousel:hover .carousel-control-next {
+    display: block;
+}
+
+.carousel .carousel-control-prev,
+.carousel .carousel-control-next {
+    display: none;
+}
+
+.recent-articles-section {
+    padding-top: 5rem;
+    padding-bottom: 7rem;
+    margin-top: 5rem
+}
+
+.recent-articles-section {
+    position: relative;
+    padding-bottom: 10rem;
+  }
+  
+  .recent-articles-section::before {
+    content: "";
+    position: absolute;
+    top: -45px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #ffffff;
+    transform: skewY(-3deg);
+  }
+  
+  .recent-articles-section::after {
+    content: "";
+    position: absolute;
+    bottom: -45px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #ffffff;
+    transform: skewY(-3deg);
+  }
+  
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-fancy;
+}
+p, span, a {
+    font-family: $font-normal;
+}
+
+.nav-logo {
+    min-width: 100;
+}
+
+.description-spotify-section {
+    margin-top: 6rem;
+}
+
+.description-spotify-section {
+    margin-top: 6rem;
+}
+
+.carousel {
+    border: 4px solid #5b7553;
+    border-radius: 10px;
+    max-width: 928px;
+}
+
+.carousel-inner img {
+    border-radius: 5px;
+}
+
+footer {
+    border-top: 4px solid #5b7553;
+}
+
+header {
+    margin-bottom: 5rem;
+}
