@@ -12032,13 +12032,16 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-  font-family: "Alegreya";
-  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h6, .h6 {
+  font-family: "Nosifer";
 }
 
-p, span, a {
+p, a {
   font-family: "Alegreya Sans";
+}
+
+h5, .h5, span {
+  font-family: "Alegreya";
 }
 
 .nav-logo {
@@ -12061,16 +12064,21 @@ p, span, a {
 }
 
 .header-title {
-  font-size: 4rem;
+  font-size: 3rem;
+  font-family: "Nosifer";
 }
 
-@media (max-width: 560px) {
+@media (max-width: 924px) {
   .header-title {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 }
 .carousel-section {
   padding-bottom: 6rem;
+}
+
+.carousel-title {
+  text-shadow: 1px 0px 0px #000;
 }
 
 .carousel .carousel-control-prev,
