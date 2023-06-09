@@ -12044,13 +12044,8 @@ h5, .h5, span {
   font-family: "Alegreya";
 }
 
-.nav-logo {
-  min-width: 100;
-}
-
 .nav-link {
   color: #715C83;
-  font-family: "Alegreya Sans";
 }
 
 .nav-link:hover {
@@ -12065,7 +12060,6 @@ h5, .h5, span {
 
 .header-title {
   font-size: 3rem;
-  font-family: "Nosifer";
 }
 
 @media (max-width: 924px) {
@@ -12074,23 +12068,66 @@ h5, .h5, span {
   }
 }
 .carousel-section {
-  padding-bottom: 6rem;
+  padding-bottom: 5rem;
 }
 
 .carousel-title {
   text-shadow: 1px 0px 0px #000;
 }
 
-.carousel .carousel-control-prev,
-.carousel .carousel-control-next {
-  display: none;
+.banner-carousel .carousel-control-prev {
+  margin-left: 0.5rem;
 }
 
-.carousel:hover .carousel-control-prev,
-.carousel:hover .carousel-control-next {
+.banner-carousel .carousel-control-next {
+  margin-right: 0.5rem;
+}
+
+.banner-carousel .carousel-control-prev,
+.banner-carousel .carousel-control-next {
+  display: none;
+  background-color: hsla(0, 0%, 100%, 0.5);
+}
+
+.banner-carousel:hover .carousel-control-prev,
+.banner-carousel:hover .carousel-control-next {
   display: block;
 }
 
+.carousel-control-prev,
+.carousel-control-next {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media (max-width: 1399px) {
+  .recent-blogs-lg-wrapper .carousel-control-next {
+    right: -2rem;
+  }
+}
+@media (max-width: 1399px) {
+  .recent-blogs-lg-wrapper .carousel-control-prev {
+    left: -2rem;
+  }
+}
+.recent-blogs-sm-wrapper {
+  max-width: 500px;
+}
+
+@media (max-width: 425px) {
+  .recent-blogs-sm-wrapper .carousel-control-prev {
+    left: -1rem;
+  }
+}
+@media (max-width: 425px) {
+  .recent-blogs-sm-wrapper .carousel-control-next {
+    right: -1rem;
+  }
+}
 .banner-carousel {
   border: 4px solid #242424;
   border-radius: 10px;
@@ -12106,20 +12143,12 @@ h5, .h5, span {
   text-decoration: underline;
 }
 
-.carousel-control-prev,
-.carousel-control-next {
-  width: auto;
-  padding: 0;
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  width: 50px;
-  height: 30px;
-}
-
 .landing-cards {
   width: 18rem;
+}
+
+.icon-wrapper {
+  margin-right: 1rem;
 }
 
 .not-landing-cards {
