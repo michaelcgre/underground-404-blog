@@ -4,13 +4,31 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "npm run watch:all",
+    "watch:scss": "onchange \"css/*.scss\" -- npm run scss",
+    "watch:all": "parallelshell \"npm run watch:scss\" \"npm run lite\"",
+    "lite": "lite-server",
+    "imagemin": "imagemin img/* -o dist/img",
+    "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html && usemin artist-spotlight.html -d dist --htmlmin -o dist/artist-spotlight.html && usemin lifestyle.html -d dist --htmlmin -o dist/lifestyle.html && usemin music-reviews.html -d dist --htmlmin -o dist/music-reviews.html && usemin as-denzel-curry.html -d dist --htmlmin -o dist/as-denzel-curry.html && usemin as-flatbush-zombies.html -d dist --htmlmin -o dist/as-flatbush-zombies.html && usemin l-lil-tracy.html -d dist --htmlmin -o dist/l-lil-tracy.html && usemin l-xavier-wulf.html -d dist --htmlmin -o dist/l-xavier-wulf.html && usemin mr-castles-blp-kosher.html -d dist --htmlmin -o dist/mr-castles-blp-kosher.html",
+    "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
+    "clean": "rimraf dist",
+    "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Michael Gregorio",
   "license": "ISC",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.4.0",
     "bootstrap": "^5.3.0"
+  },
+  "devDependencies": {
+    "copyfiles": "^2.2.0",
+    "imagemin-cli": "^5.1.0",
+    "lite-server": "^2.6.1",
+    "onchange": "^7.0.0",
+    "parallelshell": "3.0.1",
+    "rimraf": "^3.0.2",
+    "usemin-cli": "^0.6.0"
   }
 }
