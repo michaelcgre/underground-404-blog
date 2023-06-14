@@ -7,12 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>Underground 404: Denzel Curry - Artist Spotlight</title>
-  <link rel="icon" type="image/x-icon" href="../assets/images/logo-fav.ico">
+  <link rel="icon" type="image/x-icon" href="./assets/images/logo-fav.ico">
 
-  <!-- build:css css/main.css -->
+  <!-- build:css scss/main.css -->
   <link rel="stylesheet" href="./scss/main.css" />
-  <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/fontawesome.css" />
-  <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/" />
   <!-- endbuild -->
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,7 +22,7 @@
   <header>
     <nav class="navbar navbar-expand-lg bg-black navbar-dark">
       <div class="container">
-        <a class="navbar-brand" href="./index.html"><img src="../assets/images/underground-404-logo.png" alt="Logo" /></a>
+        <a class="navbar-brand" href="./index.html"><img src="./assets/images/underground-404-logo.png" alt="Logo" /></a>
         <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarLinks"
           aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -53,7 +51,7 @@
       <div class="container mt-3">
         <div class="row">
           <div class="col-lg-8">
-            <img class="img-fluid rounded" src="./assets/images/DenzelCurryLarge.png" alt="Denzel Curry">
+            <img class="img-fluid rounded" src="./assets/images/DenzelCurryLarge.png?as=webp" alt="Denzel Curry">
             <h1 class="mt-4 mb-3 text-success fw-bold text-uppercase">Denzel Curry - Artist Spotlight</h1>
             <div class="d-flex justify-content-between text-body-tertiary">
               <span>Michael Gregorio</span>
@@ -70,7 +68,7 @@
               However, it was his breakthrough single, "Ultimate" (2015), that propelled him into the mainstream. 
               The track became a viral hit and introduced Curry's dynamic style to a wider audience.
             </p>
-            <img class="img-fluid rounded my-3" src="./assets/images/DenzelCurry2.jpg" alt="Denzel Curry">
+            <img class="img-fluid rounded my-3" src="./assets/images/DenzelCurry2.jpg?as=webp" alt="Denzel Curry">
             <p class="fs-5">
               Denzel Curry's music defies categorization, blending elements of trap, punk, metal, and alternative rap. 
               His delivery ranges from aggressive and rapid-fire flows to melodic and introspective verses. 
@@ -114,7 +112,7 @@
             <h2 class="fs-2 text-success text-uppercase my-4">You might like:</h2>
             <div class="d-md-flex d-lg-block">
               <div class="card mx-auto my-4 landing-cards">
-                <img src="./assets/images/BLPKosherSmall.jpg" class="card-img-top rounded-bottom-0" alt="BLP Kosher" />
+                <img src="./assets/images/BLPKosherSmall.jpg?as=webp" class="card-img-top rounded-bottom-0" alt="BLP Kosher" />
                 <div class="card-body bg-white rounded-bottom">
                   <a href="./mr-castles-blp-kosher.html" class="card-title text-success fw-bold">
                     "Castle" by BLP Kosher - Review
@@ -129,7 +127,7 @@
                 </div>
               </div>
               <div class="card mx-auto my-4 landing-cards">
-                <img src="./assets/images/XavierWulfSmall.png" class="card-img-top rounded-bottom-0" alt="Xavier Wulf" />
+                <img src="./assets/images/XavierWulfSmall.png?as=webp" class="card-img-top rounded-bottom-0" alt="Xavier Wulf" />
                 <div class="card-body bg-white rounded-bottom">
                   <a href="./l-xavier-wulf.html" class="card-title text-success fw-bold">
                     From Lyrics to Engines: Xavier Wulf's Influence
@@ -173,7 +171,8 @@
   </footer>
 
   <!-- build:js js/main.js -->
-  <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  <script type="module" src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="./assets/js/index.js"></script>
   <!-- endbuild -->
   
   <script>

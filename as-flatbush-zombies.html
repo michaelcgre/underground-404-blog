@@ -9,10 +9,8 @@
   <title>Underground 404: Flatbush Zombies - Artist Spotlight</title>
   <link rel="icon" type="image/x-icon" href="./assets/images/logo-fav.ico">
 
-  <!-- build:css css/main.css -->
+  <!-- build:css scss/main.css -->
   <link rel="stylesheet" href="./scss/main.css" />
-  <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/fontawesome.css" />
-  <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/" />
   <!-- endbuild -->
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,7 +22,7 @@
   <header>
     <nav class="navbar navbar-expand-lg bg-black navbar-dark">
       <div class="container">
-        <a class="navbar-brand" href="./index.html"><img src="../assets/images/underground-404-logo.png" alt="Logo" /></a>
+        <a class="navbar-brand" href="./index.html"><img src="./assets/images/underground-404-logo.png" alt="Logo" /></a>
         <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarLinks"
           aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -53,7 +51,7 @@
       <div class="container mt-3">
         <div class="row">
           <div class="col-lg-8">
-            <img src="./assets/images/FlatbushZombiesBig.png" alt="Flatbush Zombies" class="img-fluid rounded" />
+            <img src="./assets/images/FlatbushZombiesBig.png?as=webp" alt="Flatbush Zombies" class="img-fluid rounded" />
             <h1 class="mt-4 mb-3 text-success fw-bold text-uppercase">Flatbush Zombies - Artist Spotlight</h1>
             <div class="d-flex justify-content-between text-body-tertiary">
               <span>Michael Gregorio</span>
@@ -65,7 +63,7 @@
               Blending elements of traditional boom-bap rap with psychedelic influences, Flatbush Zombies have carved out a distinct space in the rap scene.
             </p>
             <div class="d-flex justify-content-center">
-              <img src="./assets/images/FlatbushZombies2.png" class="img-fluid my-3 rounded" alt="Flatbush Zombies">
+              <img src="./assets/images/FlatbushZombies2.png?as=webp" class="img-fluid my-3 rounded" alt="Flatbush Zombies">
             </div>
             <p class="fs-5">
               One of the defining features of Flatbush Zombies is their ability to seamlessly merge different genres and create a distinct sonic landscape. 
@@ -98,7 +96,7 @@
             <h2 class="fs-2 text-success text-uppercase my-4">You might like:</h2>
             <div class="d-md-flex d-lg-block">
               <div class="card mx-auto my-4 landing-cards">
-                <img src="./assets/images/DenzelCurrySmall.png" class="card-img-top rounded-bottom-0" alt="Denzel Curry" />
+                <img src="./assets/images/DenzelCurrySmall.png?as=webp" class="card-img-top rounded-bottom-0" alt="Denzel Curry" />
                 <div class="card-body bg-white rounded-bottom">
                   <a href="./as-denzel-curry.html" class="card-title text-success fw-bold">
                     Denzel Curry - Artist Spotlight
@@ -113,7 +111,7 @@
                 </div>
               </div>
               <div class="card mx-auto my-4 landing-cards">
-                <img src="./assets/images/LilTracySmall.png" class="card-img-top rounded-bottom-0" alt="Lil Tracy" />
+                <img src="./assets/images/LilTracySmall.png?as=webp" class="card-img-top rounded-bottom-0" alt="Lil Tracy" />
                 <div class="card-body bg-white rounded-bottom">
                   <a href="./l-lil-tracy.html" class="card-title text-success fw-bold">
                     Forever Brothers: Lil Tracy and Lil Peep
@@ -157,7 +155,8 @@
   </footer>
 
   <!-- build:js js/main.js -->
-  <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  <script type="module" src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="./assets/js/index.js"></script>
   <!-- endbuild -->
   
   <script>

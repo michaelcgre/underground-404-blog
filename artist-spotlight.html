@@ -9,10 +9,8 @@
   <title>Underground 404: Artist Spotlight</title>
   <link rel="icon" type="image/x-icon" href="./assets/images/logo-fav.ico">
 
-  <!-- build:css css/main.css -->
+  <!-- build:css scss/main.css -->
   <link rel="stylesheet" href="./scss/main.css" />
-  <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/fontawesome.css" />
-  <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/" />
   <!-- endbuild -->
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -56,7 +54,7 @@
     <section class="row mt-4">
       <div class="col">
         <div class="card mx-auto my-4 border-0 shadow-none not-landing-cards">
-          <img src="./assets/images/DenzelCurrySmall.png" class="card-img-top" alt="Denzel Curry" />
+          <img src="./assets/images/DenzelCurrySmall.png?as=webp" class="card-img-top" alt="Denzel Curry" />
           <div class="card-body bg-transparent">
             <a href="./as-denzel-curry.html" class="card-title text-success fw-bold">Denzel Curry - Artist Spotlight</a>
             <p class="card-text">
@@ -70,7 +68,7 @@
       </div>
       <div class="col">
         <div class="card mx-auto my-4 border-0 not-landing-cards">
-          <img src="./assets/images/FlatbushZombiesSmall.png" class="card-img-top" alt="Flatbush Zombies" />
+          <img src="./assets/images/FlatbushZombiesSmall.png?as=webp" class="card-img-top" alt="Flatbush Zombies" />
           <div class="card-body bg-transparent">
             <a href="./as-flatbush-zombies.html" class="card-title text-success fw-bold">Flatbush Zombies - Artist Spotlight</a>
             <p class="card-text">
@@ -107,7 +105,8 @@
   </footer>
 
   <!-- build:js js/main.js -->
-  <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  <script type="module" src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="./assets/js/index.js"></script>
   <!-- endbuild -->
   
 </body>

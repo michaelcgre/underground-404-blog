@@ -9,10 +9,8 @@
   <title>Underground 404: Lifestyle</title>
   <link rel="icon" type="image/x-icon" href="./assets/images/logo-fav.ico">
 
-  <!-- build:css css/main.css -->
+  <!-- build:css scss/main.css -->
   <link rel="stylesheet" href="./scss/main.css" />
-  <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/fontawesome.css" />
-  <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/" />
   <!-- endbuild -->
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -56,7 +54,7 @@
     <section class="row mt-4">
       <div class="col">
         <div class="card mx-auto my-4 border-0 not-landing-cards">
-          <img src="./assets/images/XavierWulfSmall.png" class="card-img-top" alt="Xavier Wulf" />
+          <img src="./assets/images/XavierWulfSmall.png?as=webp" class="card-img-top" alt="Xavier Wulf" />
           <div class="card-body bg-transparent">
             <a href="./l-xavier-wulf.html" class="card-title text-success fw-bold">From Lyrics to Engines: Xavier Wulf's Influence</a>
             <p class="card-text">
@@ -70,7 +68,7 @@
       </div>
       <div class="col">
         <div class="card mx-auto my-4 border-0 not-landing-cards">
-          <img src="./assets/images/LilTracySmall.png" class="card-img-top" alt="Lil Tracy" />
+          <img src="./assets/images/LilTracySmall.png?as=webp" class="card-img-top" alt="Lil Tracy" />
           <div class="card-body bg-transparent">
             <a href="./l-lil-tracy.html" class="card-title text-success fw-bold">Forever Brothers: Lil Tracy and Lil Peep</a>
             <p class="card-text">
@@ -107,7 +105,8 @@
   </footer>
 
   <!-- build:js js/main.js -->
-  <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  <script type="module" src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="./assets/js/index.js"></script>
   <!-- endbuild -->
   
 </body>
